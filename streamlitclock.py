@@ -11,10 +11,10 @@ while True:
     # Get current time
     current_timestamp = datetime.now()
     newtime=current_timestamp+timedelta(hours=5,minutes=30)
-    formatted_time=t.strftime("%H:%M:%S:%p")
-    hour=int(t.strftime("%H"))
-    mins=int(t.strftime("%M"))
-    timeofday=t.strftime("%p")
+    formatted_time=newtime.strftime("%H:%M:%S:%p")
+    hour=int(newtime.strftime("%H"))
+    mins=int(newtime.strftime("%M"))
+    timeofday=newtime.strftime("%p")
     # Update the placeholder with the new timestamp
     timestamp_placeholder.write(formatted_time)
     if hour>=0 and hour<12 and timeofday=="AM":
