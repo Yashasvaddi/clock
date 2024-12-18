@@ -4,7 +4,7 @@ import time as t
 # Create a placeholder
 timestamp_placeholder = st.empty()
 datestamp_holder=st.empty()
-st.image("batman-logo-png.png")
+imagestamp_holder=st.empty()
 
 while True:
     # Get current time
@@ -20,4 +20,8 @@ while True:
     if int(t.strftime("%H"))>=20 and int(t.strftime("%H"))<24 and t.strftime("%p")=="PM":
         datestamp_holder.write("Good Night!!")
     # Pause for 1 second before updating again
+    if(int(t.strftime("%S"))%2==0):
+        imagestamp_holder.image("batman-logo-png.png")
+    else:
+        imagestamp_holder.image("wp13397527-laptop-4k-marvel-wallpapers.jpg")
     t.sleep(1)
