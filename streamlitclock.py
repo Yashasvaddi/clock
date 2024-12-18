@@ -9,19 +9,22 @@ imagestamp_holder=st.empty()
 while True:
     # Get current time
     timestamp = t.strftime("%H:%M:%S:%p")
+    hour=int(t.strftime("%H"))+5
+    mins=int(t.strftime("%M"))+30
+    timeofday=t.strftime("%p")
     # Update the placeholder with the new timestamp
     timestamp_placeholder.write(timestamp)
-    if int(t.strftime("%H"))>=0 and int(t.strftime("%H"))<12 and t.strftime("%p")=="AM":
+    if hour>=0 and hour<12 and timeofday=="AM":
         datestamp_holder.write("Good Morning!!")
-    if int(t.strftime("%H"))>=12 and int(t.strftime("%H"))<17 and t.strftime("%p")=="PM":
+    if hour>=12 and hour<17 and timeofday=="PM":
         datestamp_holder.write("Good Afternoon!!")
-    if int(t.strftime("%H"))>=17 and int(t.strftime("%H"))<20 and t.strftime("%p")=="PM":
+    if hour>=17 and hour<20 and timeofday=="PM":
         datestamp_holder.write("Good Evening!!")
-    if int(t.strftime("%H"))>=20 and int(t.strftime("%H"))<24 and t.strftime("%p")=="PM":
+    if hour>=20 and hour<24 and timeofday=="PM":
         datestamp_holder.write("Good Night!!")
     # Pause for 1 second before updating again
     if(int(t.strftime("%S"))%2==0):
         imagestamp_holder.image("batman-logo-png.png")
     else:
-        imagestamp_holder.image("wp13397527-laptop-4k-marvel-wallpapers.jpg")
+        imagestamp_holder.image("pngwing.com.png")
     t.sleep(1)
