@@ -3,9 +3,10 @@ import time as t
 from datetime import timedelta,datetime
 
 # Create a placeholder
+imagestamp_holder=st.empty()
 timestamp_placeholder = st.empty()
 datestamp_holder=st.empty()
-imagestamp_holder=st.empty()
+
 
 while True:
     # Get current time
