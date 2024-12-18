@@ -4,7 +4,7 @@ import time as t
 # Create a placeholder
 timestamp_placeholder = st.empty()
 datestamp_holder=st.empty()
-st.image([removal.ai]_798fcf3a-6273-4e9e-8729-aec432569a21-dark-blue-modern-professional-technology-company-logo-2 (1) (1).png)
+st.image(batman-logo-png.png)
 
 while True:
     # Get current time
