@@ -9,7 +9,7 @@ imagestamp_holder=st.empty()
 
 while True:
     # Get current time
-    timestamp = t.strftime("%H:%M:%S:%p")
+    timestamp = int(t.strftime("%H:%M:%S:%p"))
     newtime=timestamp+timedelta(hours=5,minutes=30)
     hour=int(t.strftime("%H"))+5
     mins=int(t.strftime("%M"))+30
